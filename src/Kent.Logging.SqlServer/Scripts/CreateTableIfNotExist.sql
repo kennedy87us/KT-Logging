@@ -1,0 +1,20 @@
+﻿IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = N'LogMessageEntry')
+BEGIN
+	SELECT 1
+END
+ELSE
+BEGIN
+	CREATE TABLE [dbo].[LogMessageEntry](
+		[LogId] [char](36) NOT NULL,
+		[CreatedDate] [datetime] NOT NULL,
+		[LogLevel] [varchar](16) NOT NULL,
+		[CategoryName] [nvarchar](256) NOT NULL,
+		[EventId] [int] NOT NULL,
+		[Message] [nvarchar](2000) NOT NULL,
+		[Exception] [nvarchar](max) NULL,
+		CONSTRAINT [PK_LogMessageEntry] PRIMARY KEY CLUSTERED 
+		([LogId] ASC) WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+	) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+	SELECT 1
+END
