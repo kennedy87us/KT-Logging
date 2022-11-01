@@ -63,7 +63,7 @@
             {
                 if (formatter == null)
                 {
-                    throw new ArgumentNullException("formatter");
+                    throw new ArgumentNullException(nameof(formatter));
                 }
 
                 string message = formatter(state, exception);

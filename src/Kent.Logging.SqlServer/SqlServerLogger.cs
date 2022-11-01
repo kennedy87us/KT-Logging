@@ -16,7 +16,7 @@
         private readonly IUnitOfWorkFactory _unitOfWorkFactory;
         private readonly Func<SqlServerLoggerConfiguration> _getCurrentConfig;
 
-        private static readonly object _lockObject = new object();
+        private static readonly object _lockObject = new();
         private const string CREATE_TABLE_SCRIPT = "CreateTableIfNotExist.sql";
 
         /// <summary>
@@ -67,7 +67,7 @@
             {
                 if (formatter == null)
                 {
-                    throw new ArgumentNullException("formatter");
+                    throw new ArgumentNullException(nameof(formatter));
                 }
 
                 string message = formatter(state, exception);
@@ -117,7 +117,7 @@
             }
         }
 
-        private string GetContentFromAssembly<TType>(string resourceName)
+        private static string GetContentFromAssembly<TType>(string resourceName)
         {
             var result = string.Empty;
 

@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net6</TargetFramework>
     <IsPackable>true</IsPackable>
     <Authors>KenT</Authors>
     <Copyright>© KenT. All rights reserved.</Copyright>
@@ -18,8 +18,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Kent.MongoDb" Version="3.1.*" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Configuration" Version="3.1.30" />
+    <PackageReference Include="Kent.MongoDb" Version="6.0.*" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Configuration" Version="6.0.0" />
   </ItemGroup>
 
   <ItemGroup>
