@@ -1,11 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <IsPackable>true</IsPackable>
     <Authors>KenT</Authors>
     <Copyright>© KenT. All rights reserved.</Copyright>
-    <Product>Kent.Logging MongoDb logger.</Product>
+    <Product>Kent.Logging.MongoDb logger</Product>
     <Description>MongoDb logger provider implementation for Microsoft.Extensions.Logging.</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>

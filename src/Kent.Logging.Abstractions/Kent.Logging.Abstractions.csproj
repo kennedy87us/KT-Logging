@@ -1,12 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <IsPackable>true</IsPackable>
     <Authors>KenT</Authors>
     <Copyright>© KenT. All rights reserved.</Copyright>
-    <Product>Kent.Logging library.</Product>
-    <Description>Provides commonly used logging models and abstractions.</Description>
+    <Product>Kent.Logging.Abstractions library</Product>
+    <Description>Provides commonly models and abstractions used to perform logging.</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <ErrorOnDuplicatePublishOutputFiles>false</ErrorOnDuplicatePublishOutputFiles>
