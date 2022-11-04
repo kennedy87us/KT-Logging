@@ -5,7 +5,7 @@
     <IsPackable>true</IsPackable>
     <Authors>KenT</Authors>
     <Copyright>© KenT. All rights reserved.</Copyright>
-    <Product>Kent.Logging SqlServer logger.</Product>
+    <Product>Kent.Logging.SqlServer logger</Product>
     <Description>SqlServer logger provider implementation for Microsoft.Extensions.Logging.</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>

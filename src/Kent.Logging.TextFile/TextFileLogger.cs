@@ -174,9 +174,9 @@
             return logBuilder.ToString();
         }
 
-        private string GetLogLevelString(LogLevel logLevel) => logLevel.ToString().ToUpper();
+        private static string GetLogLevelString(LogLevel logLevel) => logLevel.ToString().ToUpper();
 
-        private string ParseFileName(string filename)
+        private static string ParseFileName(string filename)
         {
             if (!string.IsNullOrWhiteSpace(filename))
             {
@@ -193,7 +193,7 @@
             return filename;
         }
 
-        private string CreateDirectory(string filePath, bool useLocalPath)
+        private static string CreateDirectory(string filePath, bool useLocalPath)
         {
             if (!string.IsNullOrEmpty(filePath))
             {
@@ -219,9 +219,9 @@
                         Directory.CreateDirectory(filePath);
                     }
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
-                    throw ex;
+                    throw;
                 }
             }
             return filePath;
